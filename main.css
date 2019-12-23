@@ -1,0 +1,326 @@
+﻿* {
+  box-sizing: border-box;
+}
+
+/* verikális ritmus -1rem-nyi alsó margó minden fontosabb elemnek */
+h1,h2,h3,h4,h5,h6,hgroup,ul,ol,dd,p,figure, pre,table,fieldset,hr {
+  margin-bottom: 1.5rem;
+}
+
+body {
+  background-image: url("https://codeberryschool.github.io/wct-4-landing/images/wedding-landing-background.png");
+  /**/
+  background-repeat: repeat;
+  background-position: center;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  color: #444349;
+}
+
+.location,.vallalkozas,.program,.qanda,.contact {
+  width:95%;
+  margin: 1.5rem auto;
+  padding: .5rem 1rem;
+  text-align: center;
+}
+
+h1,h2 {
+  font-family: 'Libre Baskerville', serif;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: #bd806e;
+}
+
+a:hover {
+  color: #eda087;
+  transition: color .15s ease-in-out;
+}
+
+/* Full screen header setting */
+.cover {
+  background: url('pictures/thermostat-250556_1920.jpg') no-repeat 70% center/cover;
+  height: 100vh;
+  text-align: center;
+  display: table;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+	display:inline-block;
+	margin: 0 auto;
+	font-size:2.125rem;
+	padding:.625rem;	
+	width:100vw;
+	background:hsla(100,0%,0%,.3);
+}
+
+.underline::after{
+  display: block;
+  content: "";
+  background-color: #fff;
+  height: 1px;
+  width: 12.515625rem;
+  margin: .5rem auto;
+}
+
+.telnum:after,.telnum::before {
+  display: inline-block;
+  content: "";
+  background-color: #fff;
+  height: 1px;
+  width: 1rem;
+  vertical-align: middle;
+  margin: 0 .5rem;
+}
+
+.cover h1{
+  font-size: 1.5rem;
+  color: #d2ba87;
+  margin-bottom: 0;
+  
+}
+
+.underline {
+  font-size: 2rem;
+  letter-spacing: .15rem;
+  font-weight: bold;
+  color:hsla(0,0%,100%,.9)
+}	
+
+.telnum {
+  font-size: 1rem;
+  letter-spacing: .15rem;
+  font-weight: bold;
+  color:hsla(0,0%,100%,.9)
+
+}
+
+/* --------------- Location part setting ------------------------ */
+.location{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.item-box{
+  /*display: flex;*/
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.item {
+	margin:2rem;
+}
+
+.image {
+	height:12.5rem;
+}
+
+.item p {
+  line-height: 1.5;
+  margin: 0;
+  font-family:'Muli', sans-serif;
+}
+
+.item h3 {
+  font-family:'Libre Baskerville', serif;
+  font-weight: bold;
+}
+
+.item::after{
+  display: block;
+  content: "";
+  background-color: #444349;
+  height: 2px;
+  width: 30vw;
+  margin: 1.5rem auto;
+}
+
+/* --------------- Programs part setting ------------------------ */
+.program{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width:100%;
+  background:hsla(100,0%,0%,.6);
+  font-family: 'Muli', sans-serif;
+  color:#d2ba87 
+}
+
+.program h2 {
+  margin-top: 1rem
+}
+
+.program p {
+  font-style:italic;
+}
+
+.program li {
+  text-align: left;
+}
+
+/* --------------- Vallalkozas part setting ------------------------ */
+.vallalkozas img {
+  height:7.5rem;
+}
+
+.vallalkozas p {
+  margin-top:.5rem;
+  font-size:1rem;
+}
+
+.ford {
+  font-weight: bold;
+}
+
+/* --------------- Qanda part setting ------------------------ */
+.qanda{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width:100%;
+  background:hsla(100,0%,0%,.6);
+  font-family: 'Muli', sans-serif;
+  color:#d2ba87 
+}
+
+.qanda-gruop::after{
+  display: block;
+  content: "";
+  background-color: #d2ba87;
+  height: 2px;
+  width: 45vw;
+  margin: 1rem auto;
+}
+
+.question {
+  font-weight: bold;	
+  margin-bottom:.1rem;
+}
+
+.answer {
+	margin-bottom:1.5rem;
+}
+
+.question,.answer {
+  text-align: left;
+}
+
+.qanda h2 {
+  margin-top: 1rem;
+}
+
+.tevekeny {
+  font-size:2rem;
+  
+}
+
+.qanda-pic {
+	height:7rem;
+	filter: grayscale(100%);
+}
+
+/* --------------- Contact part setting ------------------------ */
+.contact{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width:100%;
+  background:hsla(100,0%,0%,.6);
+  font-family: 'Muli', sans-serif;
+  color:#d2ba87;
+  margin-bottom:0;  
+  
+}
+
+.contact p {
+	margin-bottom:0;
+}
+	
+/* --------------- Footer part setting ------------------------ */
+footer {
+  width:100vw;
+  height:15vw;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  font-size: .8rem;
+  margin-bottom:0px;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+
+
+footer p {
+  margin-bottom:0px;
+}
+
+/* --------------- Settings over 768px ------------------------ */
+@media (min-width: 768px) {
+  .underline {
+    text-transform: uppercase;
+  }
+  
+  .cover h1{
+    font-size: 2rem;
+  }
+  
+  .wrapper {
+	  width:60vw;
+  }
+  
+  .item-box{
+    display: flex;
+  }
+  
+  .item::after{
+    height: 0px;
+  }
+  
+  .program{
+    justify-content: center;
+    align-items: center;
+}
+  
+  .program-box{
+	display:inline-block;
+  }
+  
+  .qanda-frame{
+    display: flex;
+  }
+  
+  .qanda-gruop {
+	  padding:1rem;
+	  margin: .5rem;
+	  width:33%;
+	  vertical-align: top;
+	  
+  }
+  
+  .qanda-gruop::after{
+    height: 0px;
+  }
+  
+  footer {
+	height:7vh;
+	
+  }
+  
+}
